@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+/* --------------------------------header---------------------------- */
+.header {
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+  margin-bottom: 50px;
+}
+.inside-header {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  vertical-align: middle;
+  align-items: center;
+  margin: 0 15px;
+}
+.logo {
+  height: 50px;
+  width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* -----------------------------------body------------------------------ */
+.container-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-loading {
+  color: #ff6e00;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button {
+  background-color: #ff6f0071;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #ff6e00;
+  transition: 0.5s;
+}
+
+.text-page1 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.text-suggest {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: promp;
+  margin: 0 20px;
+}
+
+.text-page2 {
+  font-size: 20px;
+}
+.body-page2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-back {
+  background-color: #ff6f0071;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+.button-back:hover {
+  cursor: pointer;
+  background-color: #ff6e00;
+  transition: 0.5s;
 }
